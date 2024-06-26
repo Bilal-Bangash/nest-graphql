@@ -9,5 +9,6 @@ type Book {
 }
 
 type Query {
+  index: String!
   books: [Book!]
 }

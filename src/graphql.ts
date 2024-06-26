@@ -15,6 +15,7 @@ export interface Book {
 }
 
 export interface IQuery {
+    index(): string | Promise<string>;
     books(): Nullable<Book[]> | Promise<Nullable<Book[]>>;
 }
 
