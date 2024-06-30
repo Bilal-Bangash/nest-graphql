@@ -6,6 +6,7 @@ import { ApolloDriver } from '@nestjs/apollo';
 import { BookModule } from './book/book.module';
 import { join } from 'path';
 import { AppResolver } from './app.resolver';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { AppResolver } from './app.resolver';
       // typePaths: ['./**/*.graphql'],
     }),
     BookModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
